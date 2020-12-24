@@ -2,6 +2,8 @@
 
 # Django
 from django.http import HttpResponse
+
+# Utilities
 from datetime import datetime
 import json
 
@@ -26,6 +28,7 @@ def sort_integers(request):
         json.dumps(data, indent=4),
         content_type='application/json'
     )
+
 
 def say_hi(request, name, age):
     """Return a greeting."""
